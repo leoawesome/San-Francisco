@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="2026年9月4日星期五 · 旧金山一日行程。店名地址保留英文，方便地图搜索。">
+<meta name="theme-color" content="#EAEDEF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F151A" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SF Friday">
+<meta name="format-detection" content="telephone=yes">
+<style>
+:root{color-scheme:light dark}
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto}
+[hidden]{display:none!important}
+</style>
+<title>Powell to Baker Beach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --ground:#EAEDEF;
+  --surface:#FFFFFF;
+  --surface-2:#F3F5F6;
+  --ink:#16212B;
+  --ink-soft:#4C5C69;
+  --ink-faint:#788894;
+  --rule:#D2D9DE;
+  --rule-soft:#E2E7EA;
+  --orange:#C4471F;
+  --orange-wash:#F8E9E3;
+  --teal:#1F6F6B;
+  --teal-wash:#E2EFEE;
+  --warn:#8F5A0C;
+  --warn-wash:#FBF0DC;
+  --warn-edge:#E0BE7E;
+  --cold:#2C6E9B;
+  --cold-wash:#E3EEF6;
+  --shadow:0 1px 2px rgba(22,33,43,.06), 0 8px 24px -16px rgba(22,33,43,.28);
+
+  --display:"Barlow Condensed","Noto Sans SC","PingFang SC","Helvetica Neue",Arial,sans-serif;
+  --body:"Noto Sans","Noto Sans SC","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F151A;
+    --surface:#171F26;
+    --surface-2:#1D262E;
+    --ink:#E5EBEF;
+    --ink-soft:#A3B1BC;
+    --ink-faint:#75848F;
+    --rule:#2B363F;
+    --rule-soft:#222C34;
+    --orange:#EE7A4C;
+    --orange-wash:#31201A;
+    --teal:#5CB3AA;
+    --teal-wash:#152825;
+    --warn:#DCA95C;
+    --warn-wash:#2A2116;
+    --warn-edge:#4E3D22;
+    --cold:#7FB6DC;
+    --cold-wash:#17242E;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F151A;
+  --surface:#171F26;
+  --surface-2:#1D262E;
+  --ink:#E5EBEF;
+  --ink-soft:#A3B1BC;
+  --ink-faint:#75848F;
+  --rule:#2B363F;
+  --rule-soft:#222C34;
+  --orange:#EE7A4C;
+  --orange-wash:#31201A;
+  --teal:#5CB3AA;
+  --teal-wash:#152825;
+  --warn:#DCA95C;
+  --warn-wash:#2A2116;
+  --warn-edge:#4E3D22;
+  --cold:#7FB6DC;
+  --cold-wash:#17242E;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:15px;
+  line-height:1.6;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.15rem 4rem}
+
+/* ---------- masthead ---------- */
+.mast{padding:2.5rem 0 1.5rem}
+.eyebrow{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.86rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--orange);
+  margin:0 0 .5rem;
+}
+h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:clamp(2.6rem,12vw,4rem);
+  line-height:.92;
+  letter-spacing:-.01em;
+  text-transform:uppercase;
+  margin:0;
+  text-wrap:balance;
+}
+.dek{
+  margin:.85rem 0 0;
+  color:var(--ink-soft);
+  font-size:.97rem;
+  max-width:34rem;
+}
+.dek b{color:var(--ink);font-weight:500}
+
+/* ---------- fixed facts ---------- */
+.facts{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  overflow:hidden;
+  margin:1.75rem 0 0;
+}
+@media(min-width:34rem){.facts{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fact{background:var(--surface);padding:.8rem .85rem .85rem}
+.fact dt{
+  font-family:var(--display);
+  font-size:.74rem;
+  font-weight:600;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin:0 0 .2rem;
+}
+.fact dd{
+  margin:0;
+  font-family:var(--mono);
+  font-size:1.16rem;
+  font-weight:500;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.02em;
+}
+.fact dd span{
+  display:block;
+  font-family:var(--body);
+  font-size:.78rem;
+  font-weight:400;
+  color:var(--ink-soft);
+  letter-spacing:0;
+  margin-top:.1rem;
+}
+
+/* ---------- sections ---------- */
+section{margin-top:2.75rem}
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.6rem;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+  margin:0 0 .2rem;
+  display:flex;
+  align-items:baseline;
+  gap:.6rem;
+}
+h2 .num{
+  font-family:var(--mono);
+  font-size:.8rem;
+  font-weight:500;
+  color:var(--orange);
+  letter-spacing:0;
+  text-transform:none;
+}
+.sub{margin:0 0 1.4rem;color:var(--ink-soft);font-size:.92rem;max-width:34rem}
+
+/* ---------- prep list ---------- */
+.prep{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem}
+.prep li{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:.75rem;
+  align-items:start;
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-left:3px solid var(--orange);
+  border-radius:2px;
+  padding:.7rem .85rem;
+}
+.prep .k{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.78rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--orange);
+  padding-top:.18rem;
+  white-space:nowrap;
+}
+.prep p{margin:0;font-size:.92rem}
+
+/* ---------- the route ---------- */
+.route{margin:0;padding:0;list-style:none}
+
+.stop{
+  display:grid;
+  grid-template-columns:3.6rem 1fr;
+  gap:0;
+  position:relative;
+}
+.stop .time{
+  font-family:var(--mono);
+  font-size:.86rem;
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+  color:var(--ink);
+  padding-top:.95rem;
+  letter-spacing:-.03em;
+}
+.stop .track{
+  position:relative;
+  padding:0 0 0 1.35rem;
+  border-left:1px solid var(--rule);
+}
+.stop .track::before{
+  content:"";
+  position:absolute;
+  left:-5px;top:1.15rem;
+  width:9px;height:9px;
+  border-radius:50%;
+  background:var(--surface);
+  border:2px solid var(--orange);
+}
+.stop.minor .track::before{border-color:var(--rule);background:var(--rule)}
+.stop:last-child .track{border-left-color:transparent}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:.9rem 1rem 1rem;
+  margin:.65rem 0 0;
+  box-shadow:var(--shadow);
+}
+.stop.minor .card{background:transparent;border:0;box-shadow:none;padding:.55rem 0 .3rem;margin-top:.4rem}
+
+.stop h3{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.24rem;
+  letter-spacing:.01em;
+  margin:0;
+  line-height:1.15;
+  text-wrap:balance;
+}
+.stop.minor h3{font-size:1.02rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em}
+.addr{
+  font-family:var(--mono);
+  font-size:.76rem;
+  color:var(--ink-faint);
+  margin:.25rem 0 0;
+  letter-spacing:-.01em;
+}
+.stop p.note{margin:.6rem 0 0;font-size:.92rem}
+.stop p.note + p.note{margin-top:.5rem}
+
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:.6rem 0 0}
+.tag{
+  font-family:var(--display);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  padding:.16rem .45rem .1rem;
+  border-radius:2px;
+  border:1px solid var(--rule);
+  color:var(--ink-soft);
+  background:var(--surface-2);
+}
+.tag.free{color:var(--teal);background:var(--teal-wash);border-color:transparent}
+.tag.cost{color:var(--orange);background:var(--orange-wash);border-color:transparent;font-family:var(--mono);letter-spacing:-.01em;text-transform:none}
+.tag.hours{font-family:var(--mono);letter-spacing:-.01em;text-transform:none}
+
+/* legs between stops */
+.leg{
+  display:grid;
+  grid-template-columns:3.6rem 1fr;
+}
+.leg .spacer{}
+.leg .inner{
+  border-left:1px dashed var(--rule);
+  padding:.5rem 0 .5rem 1.35rem;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.4rem .55rem;
+}
+.mode{
+  font-family:var(--display);
+  font-size:.73rem;
+  font-weight:700;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  padding:.2rem .5rem .14rem;
+  border-radius:2px;
+  color:#fff;
+  background:var(--ink-soft);
+  white-space:nowrap;
+}
+.mode.walk{background:transparent;color:var(--ink-soft);border:1px solid var(--rule)}
+.mode.cable{background:var(--orange)}
+.mode.uber{background:var(--ink)}
+:root[data-theme="dark"] .mode.uber,
+:root:not([data-theme="light"]) .mode.uber{color:#0F151A}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]) .mode.uber{color:#fff}
+}
+.mode.bus{background:var(--teal)}
+.leg .detail{font-size:.85rem;color:var(--ink-soft)}
+.leg .detail b{
+  font-family:var(--mono);
+  font-weight:500;
+  color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+
+/* flags */
+.flag{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:.6rem;
+  background:var(--warn-wash);
+  border:1px solid var(--warn-edge);
+  border-radius:2px;
+  padding:.6rem .75rem;
+  margin:.7rem 0 0;
+  font-size:.88rem;
+}
+.flag .lbl{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.73rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--warn);
+  padding-top:.2rem;
+  white-space:nowrap;
+}
+.flag p{margin:0}
+
+/* chinese food block */
+.dish{
+  margin:.85rem 0 0;
+  border-top:1px solid var(--rule);
+  padding-top:.1rem;
+}
+.dish dl{margin:0;display:flex;flex-direction:column;gap:0}
+.dish .row{
+  display:flex;
+  flex-direction:column;
+  gap:.15rem;
+  padding:.6rem 0;
+  border-bottom:1px solid var(--rule-soft);
+  min-width:0;
+}
+.dish .row:last-child{border-bottom:0;padding-bottom:.15rem}
+.dish dt{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.92rem;
+  letter-spacing:.02em;
+  line-height:1.3;
+  color:var(--orange);
+  overflow-wrap:break-word;
+}
+.dish dd{
+  margin:0;
+  font-size:.88rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  overflow-wrap:break-word;
+}
+.dish dd .cn{color:var(--ink);font-weight:500}
+
+/* ---------- money ---------- */
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface)}
+th,td{text-align:left;padding:.55rem .8rem;border-bottom:1px solid var(--rule-soft)}
+th{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:.76rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+}
+td.n{
+  font-family:var(--mono);
+  font-variant-numeric:tabular-nums;
+  text-align:right;
+  white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:0}
+tfoot td{
+  border-top:2px solid var(--ink);
+  border-bottom:0;
+  font-weight:700;
+}
+tfoot td.n{font-size:1.05rem}
+
+/* ---------- swaps ---------- */
+.swaps{display:flex;flex-direction:column;gap:.85rem;margin:0;padding:0}
+.swap{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:.8rem .95rem .9rem;
+}
+.swap .when{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.78rem;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--orange);
+  margin:0 0 .3rem;
+}
+.swap p{margin:0;font-size:.9rem}
+.swap p + p{margin-top:.4rem}
+
+/* ---------- audit ---------- */
+.audit{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.8rem}
+.audit li{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:.7rem;
+  align-items:start;
+  padding-bottom:.8rem;
+  border-bottom:1px solid var(--rule-soft);
+}
+.audit li:last-child{border-bottom:0;padding-bottom:0}
+.verdict{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.71rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:.2rem .45rem .13rem;
+  border-radius:2px;
+  white-space:nowrap;
+  margin-top:.15rem;
+}
+.verdict.wrong{background:var(--orange-wash);color:var(--orange)}
+.verdict.stale{background:var(--warn-wash);color:var(--warn)}
+.verdict.ok{background:var(--teal-wash);color:var(--teal)}
+.audit p{margin:0;font-size:.9rem}
+.audit p strong{font-weight:700}
+.audit p em{color:var(--ink-soft);font-style:normal}
+
+/* ---------- contacts ---------- */
+.contacts{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+@media(min-width:34rem){.contacts{grid-template-columns:1fr 1fr}}
+.contact{background:var(--surface);padding:.7rem .85rem}
+.contact .nm{font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:.01em}
+.contact .ln{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:-.01em}
+.contact a{color:var(--orange);text-decoration:none;border-bottom:1px solid var(--orange-wash)}
+.contact a:hover{border-bottom-color:var(--orange)}
+
+footer{
+  margin-top:3rem;
+  padding-top:1.2rem;
+  border-top:1px solid var(--rule);
+  font-size:.82rem;
+  color:var(--ink-faint);
+}
+footer p{margin:0 0 .4rem}
+
+/* ---------- the bench: optional, not in the plan ---------- */
+.benchnote{
+  background:var(--surface-2);
+  border:1px dashed var(--rule);
+  border-radius:3px;
+  padding:.7rem .85rem;
+  margin:0 0 1.5rem;
+  font-size:.9rem;
+  color:var(--ink-soft);
+}
+.benchnote b{color:var(--ink)}
+.grp{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.8rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  margin:2rem 0 .3rem;
+}
+.grp::after{content:"";flex:1;height:1px;background:var(--rule)}
+.grp:first-of-type{margin-top:0}
+.bitem{
+  padding:.95rem 0 1rem;
+  border-bottom:1px solid var(--rule-soft);
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+}
+.bitem:last-child{border-bottom:0}
+.bhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .6rem;min-width:0}
+.bhead>*{min-width:0;overflow-wrap:break-word}
+.bname{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:1.14rem;
+  letter-spacing:.01em;
+  line-height:1.15;
+}
+.bmeta{
+  font-family:var(--mono);
+  font-size:.75rem;
+  color:var(--ink-faint);
+  letter-spacing:-.01em;
+}
+.bitem p{margin:0;font-size:.9rem}
+.bswap{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:.55rem;
+  align-items:start;
+  font-size:.86rem;
+  color:var(--ink-soft);
+}
+.bswap .sl{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.7rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--teal);
+  padding-top:.22rem;
+  white-space:nowrap;
+}
+.bswap.no .sl{color:var(--warn)}
+.tag.cold{color:var(--cold);background:var(--cold-wash);border-color:transparent}
+
+
+/* ---------- mobile priority ---------- */
+.maplink{
+  display:inline-block;
+  margin-left:.45rem;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.72rem;
+  letter-spacing:.1em;
+  color:var(--orange);
+  background:var(--orange-wash);
+  border-radius:2px;
+  padding:.28rem .5rem .22rem;
+  text-decoration:none;
+  white-space:nowrap;
+  vertical-align:baseline;
+}
+.maplink:active{background:var(--orange);color:var(--surface)}
+.contact a{
+  display:inline-block;
+  padding:.25rem 0;
+  font-weight:500;
+}
+/* respect notches and rounded corners */
+@supports(padding:max(0px)){
+  .wrap{
+    padding-left:max(1.15rem,env(safe-area-inset-left));
+    padding-right:max(1.15rem,env(safe-area-inset-right));
+    padding-bottom:max(4rem,env(safe-area-inset-bottom));
+  }
+}
+/* narrow phones: reclaim the time-rail gutter */
+@media(max-width:22rem){
+  .stop,.leg{grid-template-columns:3.1rem 1fr}
+  .stop .track,.leg .inner{padding-left:1.05rem}
+  .card{padding:.8rem .8rem .85rem}
+  body{font-size:14.5px}
+}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <p class="eyebrow">2026年9月4日 星期五 · San Francisco</p>
+    <h1>Powell to Baker&nbsp;Beach</h1>
+    <p class="dek">一天自由时间，两个人，没有车。落脚点是 <b>SF Marriott Union Square, 480 Sutter St</b>。下面每一家的周五营业时间都逐个核对过。整天的行程是从一个固定数字倒推出来的：<b>日落 19:36</b>。</p>
+
+    <dl class="facts">
+      <div class="fact"><dt>日落</dt><dd>19:36<span>18:40 起进入黄金光线</span></dd></div>
+      <div class="fact"><dt>最高温</dt><dd>67°F<span>全天晴</span></dd></div>
+      <div class="fact"><dt>风速</dt><dd>9–14<span>mph，阵风到 21</span></dd></div>
+      <div class="fact"><dt>入夜后</dt><dd>56°F<span>带件真正的外套</span></dd></div>
+    </dl>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span> 出门前</h2>
+    <p class="sub">这三件事漏掉会直接毁掉一天。</p>
+    <ul class="prep">
+      <li>
+        <span class="k">交通票</span>
+        <p>在 MuniMobile app 里买 <b>1-Day Visitor Passport，每人 $15</b>。缆车、公交、historic streetcar 全部无限次。单次缆车票价 $9，你今天要坐两趟，所以刷第二次就已经赚回来了。注意：<b>MuniMobile 从 9 月 1 日起停售单程票</b>，现在只能买通票、用 Clipper 卡，或者直接拿感应式银行卡在读卡器上刷。</p>
+      </li>
+      <li>
+        <span class="k">穿搭</span>
+        <p>市区内 67°F 晴天，但 19:30 的 Baker Beach 是 56°F 加阵风 21 mph，风直接从太平洋吹上来。要防风外套，不是卫衣。绝大多数人的旧金山日落就是这么被冻毁的。</p>
+      </li>
+      <li>
+        <span class="k">打一个电话</span>
+        <p>早上打 <b>Sotto Mare：(415) 398-3181</b>，留言，他们会回电。两人桌是现场排队制，所以这不是订位 —— 是提前问清楚 20:30 大概要等多久。Mama's 完全不接受订位，直接去排就行。</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> 路线</h2>
+    <p class="sub">两顿热的正餐，都是旧金山原创的菜，排队都安排在你还有精神的时候。总步行约 7 公里，几乎全是平路或下坡 —— 爬坡交给缆车。</p>
+
+    <ul class="route">
+
+      <li class="stop">
+        <div class="time">09:30</div>
+        <div class="track">
+          <div class="card">
+            <h3>出门</h3>
+            <p class="addr">480 Sutter St → Powell &amp; Sutter，一个街区<a class="maplink" href="https://maps.google.com/?q=SF+Marriott+Union+Square%2C+480+Sutter+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <p class="note">你家门口那个转角就是缆车站。这件事不小，看下一条。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>2 分钟</b> · 一个街区走到 Powell Street 的轨道边</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">09:40</div>
+        <div class="track">
+          <div class="card">
+            <h3>上 Powell-Hyde 缆车</h3>
+            <p class="addr">Powell St &amp; Sutter St<a class="maplink" href="https://maps.google.com/?q=Powell+St+%26+Sutter+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags"><span class="tag cost">通票已含</span><span class="tag free">省 45 分钟</span></div>
+            <p class="note">往南四个街区的 Powell &amp; Market 总站，排队 <b>45 到 60 分钟</b>。你家这个转角是中途站，<b>没有队</b> —— 等一辆还有空位的车，直接上。第一辆满了，下一辆约 8 分钟后到。这是你酒店位置带来的最大一笔运气。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode cable">缆车</span>
+        <span class="detail"><b>15 分钟</b> · 向北翻过 Nob Hill 和 Russian Hill</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">09:55</div>
+        <div class="track">
+          <div class="card">
+            <h3>Lombard Street（九曲花街）</h3>
+            <p class="addr">Lombard St &amp; Hyde St<a class="maplink" href="https://maps.google.com/?q=Lombard+Street+Crooked+Street%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags"><span class="tag free">步行免费</span><span class="tag">40 分钟</span></div>
+            <p class="note">缆车把你放在<b>坡顶</b>，正好是你想要的那一侧。一个街区之内八个发夹弯，从 Hyde 拐到 Leavenworth。先从坡顶往下拍弯道，走两侧任意一边的台阶下去，再从 Leavenworth 那头往上拍 —— 两个方向出来的照片完全不同。</p>
+            <p class="note">10:00 前到很关键。到中午这个街区会挤得肩膀碰肩膀。</p>
+            <div class="flag">
+              <span class="lbl">收费说明</span>
+              <p>现在开车下这段弯道需要付费预约 —— 平日 $5，周末 $10，09:00–21:00 时段。走路看依然免费，不用票、不用预约、没有闸口。你是走路。</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>15 分钟</b> · 沿 Lombard 往东下坡，再走 Columbus 到 Union —— 全程下坡</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">10:50</div>
+        <div class="track">
+          <div class="card">
+            <h3>早午餐：Mama's on Washington Square</h3>
+            <p class="addr">1701 Stockton St · (415) 362-6421 · 周五 08:00–14:00<a class="maplink" href="https://maps.google.com/?q=Mama%27s+on+Washington+Square%2C+1701+Stockton+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags">
+              <span class="tag">从不接受订位</span>
+              <span class="tag hours">14:00 关门</span>
+              <span class="tag cost">两人约 $65</span>
+            </div>
+            <p class="note">1964 年开到现在，还是家族经营，就在 Washington Square 转角，对面是那座教堂。<b>所有东西都是铁板现做端上来的热食</b>，咖啡无限续。</p>
+            <p class="note">排队就是入场费，这家店从来没接受过订位。但<b>周五的队只有周末的一小部分</b> —— 周末要排两三个小时。10:50 左右去排，大概 11:30 能坐下。<b>先去排队，站在队里再慢慢决定吃什么。</b></p>
+            <div class="flag">
+              <span class="lbl">注意</span>
+              <p>周五 14:00 硬性打烊，厨房比这还早收。万一你 13:15 之后才到，别去排了 —— 直接看第 04 节的备选。</p>
+            </div>
+            <div class="dish">
+              <dl>
+                <div class="row"><dt>The Famous Monte Cristo</dt><dd><span class="cn">招牌 Monte Cristo 法式三明治</span> — 烤火鸡胸 + 蜜汁火腿 + 切达 + 格鲁耶尔芝士，整个下铁板煎到外脆内融，配自家熬的果酱。全店最出名，约 $18–22。</dd></div>
+                <div class="row"><dt>Mama's Cristo</dt><dd><span class="cn">Mama's 版本</span> — 换成哈瓦蒂芝士加苹果片，甜咸交界，$19.50。想吃招牌又怕太腻就点这个。</dd></div>
+                <div class="row"><dt>Dungeness Crab Cake Benedict</dt><dd><span class="cn">珍宝蟹饼班尼迪克蛋</span> — 蟹肉饼 + 水波蛋 + 荷兰酱。想吃蟹点它，但注意晚餐那锅 cioppino 里也有蟹。</dd></div>
+                <div class="row"><dt>French Toast</dt><dd><span class="cn">法式吐司</span> — 水果直接揉进面糊里烤：蔓越莓橙皮配烤核桃，或者蓝莓树莓配柠檬皮。不是淋果酱，是烤进去的。</dd></div>
+                <div class="row"><dt>Bottomless coffee</dt><dd><span class="cn">咖啡无限续杯</span> — 排队值回来的一部分。</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>5 分钟</b> · 往西走到 Mason &amp; Union</span>
+      </div></li>
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode cable">缆车</span>
+        <span class="detail"><b>12 分钟</b> · 换 Powell-Mason 线坐到 Bay &amp; Taylor 终点站 —— 今天第二条缆车线，同一张通票</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">13:10</div>
+        <div class="track">
+          <div class="card">
+            <h3>Buena Vista Cafe 的爱尔兰咖啡</h3>
+            <p class="addr">2765 Hyde St（Beach 路口）· 周五 09:00–24:00<a class="maplink" href="https://maps.google.com/?q=Buena+Vista+Cafe%2C+2765+Hyde+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags"><span class="tag cost">每杯约 $15</span><span class="tag">30 分钟</span></div>
+            <p class="note"><b>爱尔兰咖啡是 1952 年由这家酒吧引进美国的</b>，配方至今没动过。他们把玻璃杯在吧台上排成一整排，一次性从头浇到尾 —— 值得看，不只是值得喝。它在 Powell-Hyde 线的最末端，从 Powell-Mason 线放你下车的地方走一小段就到。</p>
+            <div class="dish">
+              <dl>
+                <div class="row"><dt>Irish Coffee</dt><dd><span class="cn">爱尔兰咖啡</span> — 咖啡 + 爱尔兰威士忌 + 方糖，顶上浮一层打发到刚好不下沉的鲜奶油。美国第一杯就诞生在这个吧台，1952 年。</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>共 35 分钟</b> · 沿海滨往东走，边走边停</span>
+      </div></li>
+
+      <li class="stop minor">
+        <div class="time">13:45</div>
+        <div class="track">
+          <div class="card">
+            <h3>Ghirardelli Square → Hyde Street Pier</h3>
+            <p class="note">两处都免费穿行。Hyde Street Pier 停着一排 19 世纪的老船，站在码头上就能看清楚，不用买票登船。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="stop minor">
+        <div class="time">14:15</div>
+        <div class="track">
+          <div class="card">
+            <h3>Boudin —— 酸面包这一站</h3>
+            <p class="note">160 Jefferson St，开到 22:00。蛤蜊浓汤装在酸面包碗里，约 $15，两人分一个。旧金山酸面包的酸味来自一株以这座城市命名的野生菌种 —— <em>Lactobacillus sanfranciscensis</em> —— 这就是它在别处烤不出同一个味道的真正原因。早午餐在你身后，晚餐还很远，所以这一站是桥梁：一碗，两把勺子。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="stop">
+        <div class="time">14:45</div>
+        <div class="track">
+          <div class="card">
+            <h3>Pier 39 看海狮</h3>
+            <p class="addr">K-Dock，西侧游艇码头<a class="maplink" href="https://maps.google.com/?q=Pier+39+Sea+Lion+K+Dock%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags"><span class="tag free">免费</span><span class="tag">35 分钟</span></div>
+            <p class="note">去<b>西侧的 K-Dock</b>，不是购物区那一层 —— 海狮群实际是爬上那些浮动平台的。下午这个时段它们又吵又层层叠在一起。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode uber">Uber</span>
+        <span class="detail"><b>12 分钟</b> · 约 $16 · 从 Pier 39 到 Marina 没有直达公交，这一段值得花钱</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">15:40</div>
+        <div class="track">
+          <div class="card">
+            <h3>Palace of Fine Arts（艺术宫）</h3>
+            <p class="addr">3601 Lyon St<a class="maplink" href="https://maps.google.com/?q=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags"><span class="tag free">免费</span><span class="tag">全天开放</span><span class="tag">45 分钟</span></div>
+            <p class="note">1915 年世博会留下来的罗马式圆顶，倒映在有天鹅的湖面上。<b>15:00 到 17:00 是这里全天最好的光</b> —— 你是刻意卡在这个窗口，不是碰巧。</p>
+            <p class="note">圆顶上的天使雕像今年做过清洗，但那批工程是 1 月到 3 月。今天没有任何封闭。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>15 分钟</b> · 往西进 Crissy Field，全程平路</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">16:25</div>
+        <div class="track">
+          <div class="card">
+            <h3>Crissy Field → Torpedo Wharf</h3>
+            <div class="tags"><span class="tag free">免费</span><span class="tag">45 分钟</span></div>
+            <p class="note">一条贴着海湾的平路，全程大桥就在正前方。Torpedo Wharf 让你站到水面上去，正面拍大桥，后面叠着 Marin Headlands 的山。今天最大风的一个点 —— 外套在这里开始值钱。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>15 分钟</b> · 上到崖顶</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">17:15</div>
+        <div class="track">
+          <div class="card">
+            <h3>Presidio Tunnel Tops</h3>
+            <div class="tags"><span class="tag free">免费</span><span class="tag">45 分钟</span></div>
+            <p class="note">建在高速隧道顶上的公园，2022 年开放。大桥、海湾、Alcatraz 和市区天际线，转一下头全在视野里，而且脚下是可以躺下的草坪。上面有餐车，如果离晚餐的空档开始咬人了。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode uber">Uber</span>
+        <span class="detail"><b>10 分钟</b> · 约 $14 · 叫车到 Bowley St 停车场</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">18:20</div>
+        <div class="track">
+          <div class="card">
+            <h3>Baker Beach 看日落</h3>
+            <p class="addr">Bowley St 停车场, Presidio · 日落 19:36<a class="maplink" href="https://maps.google.com/?q=Baker+Beach%2C+Bowley+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags"><span class="tag free">免费</span><span class="tag hours">日落 19:36</span></div>
+            <p class="note">大桥在你右手边，悬崖在背后，太阳沉进开阔的太平洋。你到的时候手里还握着 <b>76 分钟的光</b> —— 这段余量就是全部意义。不用跑，不用从车窗里看天空。</p>
+            <p class="note"><b>九月初是一年里仅有的两个窗口之一</b>，太阳的角度刚好从旧金山这一侧的海滩上看是落在大桥旁边的。这就是今晚选这里、不选 Marin 那个观景台的原因。</p>
+            <p class="note">为什么不去名气更大的 Battery Spencer：手机没信号、司机得绕单行道、所有人在同一分钟离场、回城还要 $9.75 过桥费。Baker Beach 信号正常，Bowley St 停车场叫车稳定。照片再好，20:00 被困在山上就一文不值。</p>
+            <div class="flag">
+              <span class="lbl">安全</span>
+              <p>旧金山海岸线目前有 <b>Beach Hazards Statement（海滩危险警告）</b>生效，从今天 06:00 到周一夜间。站在干沙上，别踩到湿沙带，绝对不要下水。这一段有偷袭浪（sneaker waves），而且没有救生员。</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode uber">Uber</span>
+        <span class="detail"><b>20 分钟</b> · 约 $25 · 20:00 前必须走</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">20:25</div>
+        <div class="track">
+          <div class="card">
+            <h3>Sotto Mare 吃 Cioppino</h3>
+            <p class="addr">552 Green St, North Beach · (415) 398-3181 · 周五 11:30–22:00<a class="maplink" href="https://maps.google.com/?q=Sotto+Mare%2C+552+Green+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
+            <div class="tags">
+              <span class="tag cost">$49.95，两人份</span>
+              <span class="tag">两人可直接走进去</span>
+              <span class="tag hours">厨房做到 22:00</span>
+            </div>
+            <p class="note"><b>Cioppino 是旧金山发明的菜</b>，而本地美食媒体提到这道菜时指的就是这家。当年就在这片海滨，意大利渔民把当天卖不掉的杂鱼丢进一锅番茄汤里 —— 这就是全部来历，也仍然是这道菜的本体。</p>
+            <p class="note">一个巨大的陶碗：<b>珍宝蟹、蛤蜊、青口、大虾、带子、鱿鱼和白肉鱼，压在笔管面上，蒜香番茄汤底</b>，配烤面包和围兜。它的定价和份量就是给两个人设计的 —— 这正是它比唐人街那种一桌合菜更适合你们的原因，两个人根本没法把那种菜单点全。</p>
+            <p class="note">店面小、吵、六角砖地板、墙上挂满老照片，没有多余的花样。<b>两人桌是现场先到先坐</b>，经常直接就进去了；这里最挤的是 19:00 那一小时，而你是在那之后到。</p>
+            <div class="dish">
+              <dl>
+                <div class="row"><dt>Crab Cioppino</dt><dd><span class="cn">珍宝蟹意式海鲜汤</span> — $49.95，一大陶锅两人份。蟹、蛤蜊、青口、大虾、带子、鱿鱼、白肉鱼，加笔管面，蒜香番茄汤底，配烤面包和围兜。旧金山发明的菜，就在发明它的这条街上吃。</dd></div>
+                <div class="row"><dt>Oysters on the half shell</dt><dd><span class="cn">半壳生蚝</span> — 开胃，等汤的时候点。</dd></div>
+                <div class="row"><dt>Fried Calamari</dt><dd><span class="cn">炸鱿鱼圈</span> — 热的，配柠檬。</dd></div>
+                <div class="row"><dt>Linguine &amp; Clams</dt><dd><span class="cn">白酒蛤蜊扁面</span> — 不想吃一整锅汤的话，这是另一条路。</dd></div>
+              </dl>
+            </div>
+            <div class="flag">
+              <span class="lbl">实话</span>
+              <p>珍宝蟹（Dungeness crab）在这里是<b>冬季</b>的东西 —— 加州中部商业捕捞季今年 1 月 5 日开，通常 6 月底关。九月 cioppino 里的蟹是从华盛顿州或阿拉斯加空运来的活蟹缸货。确实好吃，但不是本地当季巅峰。不管菜单怎么写，没有谁的蟹是今天早上从码头上岸的。</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode uber">Uber</span>
+        <span class="detail"><b>8 分钟</b> · 约 $12 · 门到门，天黑后不用走路</span>
+      </div></li>
+
+      <li class="stop">
+        <div class="time">21:50</div>
+        <div class="track">
+          <div class="card">
+            <h3>回到 480 Sutter</h3>
+            <p class="note">关于你提的安全问题：Union Square 本身没问题，但 Tenderloin 的边界从你家门口往西南大约三个街区就开始了，你听到的那些说法指的是那一片。Uber 直接停在酒店门口就完全绕开了。如果你更想走回去，从 North Beach 沿 Columbus、Kearny、Bush 走到 Sutter 大约 20 分钟，一路有人有灯，还会经过 Chinatown 的牌楼，当作看这座城市的最后一眼也不错。到时候你自己决定。</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> 花多少钱</h2>
+    <p class="sub">两个人，全部算进去。Uber 的数字是未含小费的估算，会随需求浮动。</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>项目</th><th>说明</th><th class="n">合计</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Muni Visitor Passport</td><td>一日无限次 ×2</td><td class="n">$30</td></tr>
+          <tr><td>Mama's</td><td>两份主餐，咖啡无限续</td><td class="n">$65</td></tr>
+          <tr><td>Buena Vista</td><td>爱尔兰咖啡 ×2</td><td class="n">$30</td></tr>
+          <tr><td>Boudin</td><td>一个面包碗，两人分</td><td class="n">$15</td></tr>
+          <tr><td>Uber</td><td>4 段，未含小费</td><td class="n">$67</td></tr>
+          <tr><td>Sotto Mare</td><td>两人份 cioppino 加一道前菜</td><td class="n">$85</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>全天合计</td><td>两人</td><td class="n">约 $292</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> 万一某一环没赶上</h2>
+    <p class="sub">下面每个替代方案都是同类互换，不会把后面的行程拆掉。</p>
+    <div class="swaps">
+      <div class="swap">
+        <p class="when">Mama's 的队实在离谱</p>
+        <p><b>Original Joe's</b>，601 Union St，就在 Washington Square 对面，周五 11:30 开门，接受订位。点 <b>Joe's Special</b> —— 牛肉末、菠菜、鸡蛋一起炒，1937 年在旧金山发明的菜，名字就是从这家店来的。约 $18–20。热、便宜，而且离你排队的位置只有 90 秒。</p>
+      </div>
+      <div class="swap">
+        <p class="when">你更想吃蒜香面</p>
+        <p>蒜香面也是这里发明的 —— An 家族，1971 年，在 <b>Thanh Long</b>，全市第一家越南餐厅，配方至今在一个单独隔开的厨房里做。他们的整只烤珍宝蟹是这一单的另一半。</p>
+        <p><b>但它周五 20:30 就关门</b>，所以接不上 19:36 的日落。唯一可行的版本是 17:30 吃饭，然后在往西三个街区的 Ocean Beach 看日落 —— 代价是你所有日落照片里都不会有大桥。这就是交换条件。想要的话说一声，我把下午重排。</p>
+      </div>
+      <div class="swap">
+        <p class="when">Baker Beach 起雾了</p>
+        <p>回到你那时候已经熟悉的 <b>Torpedo Wharf</b>。它位于金门内侧而不是外侧，所以外海那边被雾封住时它经常还是晴的。平路、好走、叫车方便。</p>
+      </div>
+      <div class="swap">
+        <p class="when">下午过半时你已经晚了一小时</p>
+        <p>按这个顺序砍：先砍 Boudin，再砍 Ghirardelli 和 Hyde Street Pier，最后砍 Tunnel Tops。<b>永远不要砍 Baker Beach 的时间余量。</b>日落不等人，而明天再试就是节日周六的人流，加上 Dreamforce 全城开会。</p>
+      </div>
+      <div class="swap">
+        <p class="when">你想走到大桥上去</p>
+        <p>可以，但东侧人行道大约 <b>18:30</b> 就对行人关闭，而且今天桥面阵风 21 mph，桥上毫无遮挡。要走就拿 Tunnel Tops 去换，17:00–18:00 去。说实话：海滩上拍出来的照片比桥面上拍的好。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> 备选清单</h2>
+    <p class="sub">所有好东西但没排进行程的，附上换进来所需要的信息。这一节里的任何一项都不在上面的行程里。</p>
+    <div class="benchnote">
+      <b>注意两个标签。</b><span class="tag cold">冷食</span> 表示端上来是冷的 —— 生的、冰镇的，或者冷拆的蟹。<span class="tag free">免费</span> 表示完全不用买票。营业时间都是周五的。
+    </div>
+
+    <p class="grp">吃 · 旧金山原创</p>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Thanh Long</span>
+        <span class="bmeta">4101 Judah St · 周五 16:30–20:30 · 两人约 $80 起</span>
+      </div>
+      <p><b>蒜香面就是在这里发明的。</b>An 家族 1971 年开店，是全市第一家越南餐厅，配方至今在一个别人不进去的独立厨房里制作。配他们的整只烤珍宝蟹一起点。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>20:30 关门，所以接不上 19:36 的日落。唯一可行的版本：17:30 吃饭，然后在往西三个街区的 Ocean Beach 看日落 —— 代价是所有照片里都没有大桥。可在 Tock 订位，或打 (415) 665-1146。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Tadich Grill</span>
+        <span class="bmeta">240 California St · 周五 11:00–14:30、16:30–21:00</span>
+      </div>
+      <p><b>1849 年开业 —— 加州最老的餐厅，全美第三老。</b>点 Hangtown Fry，一种生蚝加培根的煎蛋饼，来历可以追到淘金热；或者点炭烤 petrale sole 比目鱼。一半座位可订，一半留给现场。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>离你酒店步行 12 分钟，所以可以当作 11:00 的午餐，吃完再北上 —— 但那样 Mama's 就得下架，两者占同一个餐段。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Original Joe's</span>
+        <span class="bmeta">601 Union St · 周五 11:30 起 · 约 $18–20</span>
+      </div>
+      <p><b>Joe's Special</b> —— 牛肉末、菠菜、鸡蛋一起炒 —— 1937 年在旧金山发明，名字就是从这家店来的。便宜、热、接受订位，而且从 Mama's 穿过 Washington Square 就到。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>已经是第 04 节里的早午餐备选。零绕路成本 —— 离你排队的位置 90 秒。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">La Taqueria</span>
+        <span class="bmeta">2889 Mission St · 周五 11:00–20:15 · $10 以下</span>
+      </div>
+      <p><b>Mission burrito</b>，1960 年代诞生于这个街区。老板 Miguel Jara 拒绝往里加米饭，肉给双份，整个卷饼上铁板压到外皮焦脆金黄 —— <em>dorado</em>。2017 年 James Beard America's Classic，也进了米其林指南。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>Mission 区在城市的另一角，和你今天所有安排都相反。这是专程一趟，不是顺路 —— 值得留给另一天。</p></div>
+    </div>
+
+    <p class="grp">吃 · 冷食那一类</p>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Swan Oyster Depot</span>
+        <span class="tag cold">冷食</span>
+        <span class="bmeta">1517 Polk St · 周一至周六 · 只收现金 · 两人约 $120</span>
+      </div>
+      <p>1912 年的鱼档：<b>18 张吧台凳，没有餐桌，没有网站，不收卡。</b>James Beard American Classic。<b>Crab Back</b> —— 整只蟹壳反过来装满蟹膏拌融化黄油 —— 是 Bourdain 捧红的那道；另外还有一道不在菜单上的西西里生鱼片，要主动问。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>几乎全是冷的：生蚝、冷拆蟹、烟熏三文鱼。只有浓汤是热的。周五排约一小时，周六排两小时。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Hog Island Oyster Co.</span>
+        <span class="tag cold">冷食</span>
+        <span class="bmeta">Ferry Building · 周五 11:00–20:00</span>
+      </div>
+      <p>Tomales Bay 自家蚝场的生蚝，吧台在 Ferry Building 北端，水面就在旁边。周围的市集大楼里有近 50 家食品商户和小店，今天都开。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>外面那个出名的<b>农夫市集只有周二、周四、周六</b> —— 周五没有。大楼本身照常开放。</p></div>
+    </div>
+
+    <p class="grp">吃 · 更正式的一顿</p>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">House of Prime Rib</span>
+        <span class="bmeta">1906 Van Ness Ave · 周五 17:00–22:00</span>
+      </div>
+      <p>银色餐车推到你桌边现切烤肋排，连那个会旋转的沙拉盆一起，1949 年以来基本没变过。<b>是分餐制</b>，所以不像唐人街合菜，两个人吃刚好。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>订位基本要提前将近一年。现场排队确实收，但你得提早好几个小时到并且耐心等；想坐吧台，要在开门前一小时去排。节日周五的等待时间无法预测。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Zuni Café</span>
+        <span class="bmeta">1658 Market St · 周五 10:30–21:30 · 烤鸡 $72–75</span>
+      </div>
+      <p>砖炉<b>两人份烤鸡配面包沙拉</b>，是全美被抄得最多的菜之一，1987 年就在这份菜单上了。大约八块，通常还有剩。</p>
+      <div class="bswap no"><span class="sl">代价</span><p><b>要烤 1 到 1.5 小时。</b>最晚 20:00 就得点，否则厨房比你的菜先打烊 —— 这正是它今晚没进你行程的原因。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">R&amp;G Lounge</span>
+        <span class="bmeta">631 Kearny St · 周五 11:00–21:30 · Tock 订位</span>
+      </div>
+      <p>椒盐珍宝蟹 —— 整只蟹裹粉炸过，再下锅用椒盐和辣椒爆炒。时价大约 $38–65。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>一旦你们有四个人以上就值得去，因为那份菜单就是为那个人数设计的。两个人没法把它点全 —— 这就是它从你行程里下架的原因。</p></div>
+    </div>
+
+    <p class="grp">反正会经过的景点</p>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Cable Car Museum</span>
+        <span class="tag free">免费</span>
+        <span class="bmeta">1201 Mason St · 周五 10:00–17:00</span>
+      </div>
+      <p><b>这一页上最好的免费项目。</b>它不是一个挂老照片的博物馆 —— 它是还在运转的动力房。牵引全市每一辆缆车的那些巨大缆轮就在你面前的地面上转，而那个噪音本身就是重点。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>早午餐后从 Powell-Mason 那一段拐出去五分钟就到。成本大约 30 分钟，别的都不影响。如果整节只加一样，加这个。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Coit Tower（科伊特塔）</span>
+        <span class="bmeta">1 Telegraph Hill Blvd · 每天 10:00–18:00 · $11，壁画免费</span>
+      </div>
+      <p><b>一楼那批 1934 年的湿壁画不要钱</b> —— 大萧条时期由 26 位画家绘制的加州劳工题材，当年争议大到让塔的开放被推迟。$11 只是坐电梯上 360° 观景层的费用。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>从 Mama's 走上坡 10 分钟。早午餐后加 45 分钟。提醒一句：那部 90 岁的电梯经常坏，备选方案是爬 13 层楼梯。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Fort Point</span>
+        <span class="tag free">免费</span>
+        <span class="bmeta">周四至周一 10:00–17:00 · 屋顶 16:30 关</span>
+      </div>
+      <p>一座内战时期的砖砌炮台，就塞在大桥南端锚碇的正下方 —— 拱形炮位、海浪飞沫，抬头就是整个桥身填满天空。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>它正好在你 Crissy Field 那段路上，但要进去得 16:20 前到，而你那个时间正安排在 Torpedo Wharf。想进炮台，就拿 Tunnel Tops 来换。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Golden Gate Fortune Cookie Factory</span>
+        <span class="bmeta">56 Ross Alley, Chinatown · 每天 09:00–18:30 · 一盒 $17</span>
+      </div>
+      <p>小巷里的一个门洞，两三个人整天守着转动的铁板，一个一个手折幸运饼。花你两分钟；想拍工人和厂内要另付 50 美分。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>18:30 关门，所以去晚餐的路上塞不进来。这是留给另一天的唐人街早晨。</p></div>
+    </div>
+
+    <p class="grp">更远的绕路</p>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Lands End &amp; Sutro Baths</span>
+        <span class="tag free">免费</span>
+        <span class="bmeta">Point Lobos Ave · 天亮到天黑</span>
+      </div>
+      <p>一条穿过柏树的悬崖步道，远处能看到大桥，尽头是一座 1890 年代巨型海水浴场的混凝土骨架 —— 那座浴场 1966 年烧毁了。市界之内最有野性的地方。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>在 Baker Beach 往北十分钟。可以当作 17:00 的一站，<em>替掉</em> Tunnel Tops，然后再下来看日落。代价是失去大桥全景，换来整条海岸线。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">SFMOMA 的免费楼层</span>
+        <span class="tag free">免费</span>
+        <span class="bmeta">151 Third St · 周五 10:00–17:00</span>
+      </div>
+      <p>你说了不付钱看画廊，而这个不需要票：Jacob Hashimoto 的 <em>Giant Arc</em>，约 75,000 个悬挂元件在 Roberts Family Gallery 上方铺成一层顶棚，在一楼所有闸口之前。走进去，抬头，走出来。</p>
+      <div class="bswap"><span class="sl">怎么换</span><p>离酒店步行 12 分钟。只有在你 10:00 从这里开始这一天时才塞得进去，而那会把后面全部推迟一小时。</p></div>
+    </div>
+    <div class="bitem">
+      <div class="bhead">
+        <span class="bname">Alcatraz（恶魔岛）</span>
+        <span class="bmeta">从 Pier 33 坐船</span>
+      </div>
+      <p>列在这里是为了清单完整，也省你去查。</p>
+      <div class="bswap no"><span class="sl">代价</span><p>票提前 90 天放出，而<b>劳动节长周末是九月里最先卖光的</b>。今天几乎肯定没有了。官方授权的套票旅行社有时还留有库存，但要加价。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> 改了什么，为什么</h2>
+    <p class="sub">对照你截图里那份计划核对过。里面有四处对今天来说是错的或过期的。</p>
+    <ul class="audit">
+      <li>
+        <span class="verdict wrong">错误</span>
+        <p><strong>「坐 28 路公交从 SFMOMA 直达。」</strong><em>不存在。28 路根本不进市中心 —— 那段路要换两趟车或者打车。28 路只在 Marina 那一侧才帮得上你，这也是本行程把大桥安排在 Palace of Fine Arts 之后的原因。</em></p>
+      </li>
+      <li>
+        <span class="verdict wrong">错误</span>
+        <p><strong>SFMOMA 的毕加索和草间弥生。</strong><em>不是在展的东西。现在在展的是：Matisse 的</em> Femme au chapeau: A Modern Scandal<em>、Graciela Iturbide 的摄影展（到 11 月 29 日），以及 Jacob Hashimoto 的</em> Giant Arc <em>—— 后者免费，在一楼，不用票。你不想为画廊付钱，所以博物馆本来也是排除的。</em></p>
+      </li>
+      <li>
+        <span class="verdict stale">过期</span>
+        <p><strong>「周四开放到晚上 8 点，时间更灵活。」</strong><em>今天是周五。SFMOMA 是 10:00–17:00，会和你的日落正面撞车。</em></p>
+      </li>
+      <li>
+        <span class="verdict stale">过期</span>
+        <p><strong>用手机 app 买 Muni 单程票。</strong><em>MuniMobile 从 9 月 1 日起停售单程票。现在只有一日通票、Clipper 卡，或者感应式银行卡直接刷。</em></p>
+      </li>
+      <li>
+        <span class="verdict ok">改动</span>
+        <p><strong>早餐改成早午餐，晚餐换了地方。</strong><em>Mama's 排在 10:50，而不是 08:00 出发，让一天从一个正常的时间开始。唐人街下架了：粤式海鲜楼是给四个人以上一桌合菜设计的，两个人点不动那份菜单。换成 cioppino —— 一锅，定价和份量正好两人，而且是这座城市真正发明的那道菜。</em></p>
+      </li>
+      <li>
+        <span class="verdict ok">保留</span>
+        <p><strong>Lombard、Pier 39、Palace of Fine Arts。</strong><em>三个都核对通过 —— 时间对、日子对、值得花时间。只是重排了顺序，让你走下坡而不是上坡，也让艺术宫落在光线最好的时段。</em></p>
+      </li>
+      <li>
+        <span class="verdict ok">意外收获</span>
+        <p><strong>周五比周六好。</strong><em>Dreamforce 从明天早上起封 Howard Street，一直到 9 月 20 日；唐人街的盂兰盆节（Hungry Ghost Festival）明天中午到 23:00 封 Grant Avenue。两件事都是周六开始。你还捡到了周五的排队长度而不是节日周六的 —— 在 Mama's 那就是 40 分钟和 3 小时的差别。另有一条实时信息：101 公路北向在 Cesar Chavez 到 7th St 之间从今天起全封到周一 —— 不在你路线上，但要避免往南穿 SoMa 的车程。</em></p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span> 要存的电话</h2>
+    <p class="sub">其中一个今天早上真的要打。</p>
+    <div class="contacts">
+      <div class="contact">
+        <div class="nm">Sotto Mare</div>
+        <div class="ln"><a href="tel:+14153983181">(415) 398-3181</a> · 552 Green St</div>
+        <div class="ln">今早打 · 留言，他们回电</div>
+      </div>
+      <div class="contact">
+        <div class="nm">Mama's on Washington Square</div>
+        <div class="ln"><a href="tel:+14153626421">(415) 362-6421</a> · 1701 Stockton St</div>
+        <div class="ln">不接受订位 · 14:00 准时关</div>
+      </div>
+      <div class="contact">
+        <div class="nm">Original Joe's</div>
+        <div class="ln"><a href="tel:+14157754877">(415) 775-4877</a> · 601 Union St</div>
+        <div class="ln">早午餐备选 · 可订位</div>
+      </div>
+      <div class="contact">
+        <div class="nm">Buena Vista Cafe</div>
+        <div class="ln"><a href="tel:+14154745044">(415) 474-5044</a> · 2765 Hyde St</div>
+        <div class="ln">不用订</div>
+      </div>
+      <div class="contact">
+        <div class="nm">Thanh Long</div>
+        <div class="ln"><a href="tel:+14156651146">(415) 665-1146</a> · 4101 Judah St</div>
+        <div class="ln">只有把下午整个翻掉才用 · 20:30 关</div>
+      </div>
+      <div class="contact">
+        <div class="nm">SF Marriott Union Square</div>
+        <div class="ln">480 Sutter St</div>
+        <div class="ln">整晚 Uber 的目的地</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>营业时间、价格、封路和天气都是按 2026 年 9 月 4 日星期五逐项核对后才写进这一页的。餐厅价格会变，Uber 估价变得更快 —— 费用表当作量级看，不是报价。</p>
+    <p>日落 19:36 · Beach Hazards Statement 生效至周一 23:00 · Muni 手机单程票已于 9 月 1 日停售 · Mama's 14:00 关门 · Sotto Mare 22:00 关门</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
