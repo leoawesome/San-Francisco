@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="2026年9月4日星期五 · 旧金山一日行程。店名地址保留英文，方便地图搜索。">
+<meta name="description" content="2026年9月4日星期五 · 旧金山一日行程。点站名开导航，店名地址保留英文。">
 <meta name="theme-color" content="#EAEDEF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F151A" media="(prefers-color-scheme: dark)">
 <meta name="mobile-web-app-capable" content="yes">
@@ -282,6 +282,20 @@ h2 .num{
   color:var(--ink-faint);
   margin:.25rem 0 0;
   letter-spacing:-.01em;
+}
+.stop h3 a.dirlink{
+  color:inherit;
+  text-decoration:none;
+  border-bottom:2px solid var(--orange-wash);
+}
+.stop h3 a.dirlink:active{border-bottom-color:var(--orange)}
+.stop h3 .arrow{
+  font-family:var(--mono);
+  font-size:.72em;
+  font-weight:500;
+  color:var(--orange);
+  margin-left:.3rem;
+  white-space:nowrap;
 }
 .stop p.note{margin:.6rem 0 0;font-size:.92rem}
 .stop p.note + p.note{margin-top:.5rem}
@@ -571,18 +585,9 @@ footer p{margin:0 0 .4rem}
 
 /* ---------- mobile priority ---------- */
 .maplink{
-  display:inline-block;
-  margin-left:.45rem;
-  font-family:var(--display);
-  font-weight:700;
-  font-size:.72rem;
-  letter-spacing:.1em;
-  color:var(--orange);
-  background:var(--orange-wash);
-  border-radius:2px;
-  padding:.28rem .5rem .22rem;
-  text-decoration:none;
-  white-space:nowrap;
+  display:inline-block;margin-left:.45rem;font-family:var(--display);font-weight:700;
+  font-size:.72rem;letter-spacing:.1em;color:var(--orange);background:var(--orange-wash);
+  border-radius:2px;padding:.28rem .5rem .22rem;text-decoration:none;white-space:nowrap;
   vertical-align:baseline;
 }
 .maplink:active{background:var(--orange);color:var(--surface)}
@@ -655,6 +660,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
   <section>
     <h2><span class="num">02</span> 路线</h2>
     <p class="sub">两顿热的正餐，都是旧金山原创的菜，排队都安排在你还有精神的时候。总步行约 7 公里，几乎全是平路或下坡 —— 爬坡交给缆车。</p>
+    <div class="benchnote">
+      <b>两种可点的链接。</b>点<b>站点标题</b>（带 ↗ 的那行）= 打开 Google 地图<b>路线导航</b>，起点自动设成上一站，交通方式也已按这一段该走的方式设好（步行 / 公交 / 打车）。点地址后面的 <span class="tag">地图</span> = 只看这个地点在哪，不算路线。
+    </div>
 
     <ul class="route">
 
@@ -678,10 +686,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">09:40</div>
         <div class="track">
           <div class="card">
-            <h3>上 Powell-Hyde 缆车</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=480+Sutter+St%2C+San+Francisco&amp;destination=Powell+St+%26+Sutter+St%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">上 Powell-Hyde 缆车<span class="arrow">↗ 步行路线</span></a></h3>
             <p class="addr">Powell St &amp; Sutter St<a class="maplink" href="https://maps.google.com/?q=Powell+St+%26+Sutter+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
-            <div class="tags"><span class="tag cost">通票已含</span><span class="tag free">省 45 分钟</span></div>
+            <div class="tags"><span class="tag cost">通票已含</span><span class="tag free">省 45 分钟</span><span class="tag">认枣红色顶牌</span></div>
             <p class="note">往南四个街区的 Powell &amp; Market 总站，排队 <b>45 到 60 分钟</b>。你家这个转角是中途站，<b>没有队</b> —— 等一辆还有空位的车，直接上。第一辆满了，下一辆约 8 分钟后到。这是你酒店位置带来的最大一笔运气。</p>
+            <div class="flag">
+              <span class="lbl">别上错车</span>
+              <p><b>Powell-Hyde 和 Powell-Mason 两条线共用 Powell 街的轨道，都停这一站。只有 Powell-Hyde 经过九曲花街。</b></p>
+              <p>怎么分：<b>车顶路牌是枣红色（maroon）= Powell-Hyde，你要坐的这条。黄色 = Powell-Mason，不到 Lombard。</b>车头两端也有终点站牌，写 <b>Powell &amp; Hyde</b> 才对。</p>
+              <p>不确定就直接问车掌一句 <b>"Does this go to Lombard?"</b> —— 他们一天要被问几十次，问了不尴尬，上错车才尴尬。</p>
+            </div>
+            <div class="flag">
+              <span class="lbl">方向</span>
+              <p>要坐<b>往北（outbound，往 Hyde &amp; Beach / 渔人码头方向）</b>的车 —— 也就是<b>背对 Market 街、朝上坡走</b>的那个方向。往南的车是回市区总站，方向反了。</p>
+              <p>路线走法：沿 Powell 往北爬上 Nob Hill，到 <b>Jackson 街右转往西</b>，再<b>转上 Hyde 街往北</b>。之后就一路沿 Hyde 街走，翻过 Russian Hill。</p>
+            </div>
           </div>
         </div>
       </li>
@@ -695,11 +714,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">09:55</div>
         <div class="track">
           <div class="card">
-            <h3>Lombard Street（九曲花街）</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Powell+St+%26+Sutter+St%2C+San+Francisco&amp;destination=Lombard+St+%26+Hyde+St%2C+San+Francisco&amp;travelmode=transit" target="_blank" rel="noopener">Lombard Street（九曲花街）<span class="arrow">↗ 公交路线</span></a></h3>
             <p class="addr">Lombard St &amp; Hyde St<a class="maplink" href="https://maps.google.com/?q=Lombard+Street+Crooked+Street%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags"><span class="tag free">步行免费</span><span class="tag">40 分钟</span></div>
             <p class="note">缆车把你放在<b>坡顶</b>，正好是你想要的那一侧。一个街区之内八个发夹弯，从 Hyde 拐到 Leavenworth。先从坡顶往下拍弯道，走两侧任意一边的台阶下去，再从 Leavenworth 那头往上拍 —— 两个方向出来的照片完全不同。</p>
             <p class="note">10:00 前到很关键。到中午这个街区会挤得肩膀碰肩膀。</p>
+            <div class="flag">
+              <span class="lbl">在哪下车</span>
+              <p>从 Powell &amp; Sutter 上车到这里大约 <b>12 到 14 个站、10 到 15 分钟</b>。不用数站 —— 认这个顺序就行：<b>车先沿 Powell 爬坡 → 在 Jackson 街右转 → 转上 Hyde 街 → 开始下坡</b>。转上 Hyde 之后再过几站就是 Lombard。</p>
+              <p>三个信号，任一个中了就下：<b>①</b> 车掌会喊 "Lombard"，这是全线最出名的一站。<b>②</b> 一大批举着相机的人同时起身。<b>③</b> 往右手边看，你会直接看到那条弯道从坡顶蜿蜒下去。</p>
+              <p>坐过站也不要紧 —— 下一站是 Hyde &amp; Greenwich，往回走一个街区上坡就到。</p>
+            </div>
             <div class="flag">
               <span class="lbl">收费说明</span>
               <p>现在开车下这段弯道需要付费预约 —— 平日 $5，周末 $10，09:00–21:00 时段。走路看依然免费，不用票、不用预约、没有闸口。你是走路。</p>
@@ -717,7 +742,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">10:50</div>
         <div class="track">
           <div class="card">
-            <h3>早午餐：Mama's on Washington Square</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Lombard+St+%26+Hyde+St%2C+San+Francisco&amp;destination=Mama%27s+on+Washington+Square%2C+1701+Stockton+St%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">早午餐：Mama's on Washington Square<span class="arrow">↗ 步行路线</span></a></h3>
             <p class="addr">1701 Stockton St · (415) 362-6421 · 周五 08:00–14:00<a class="maplink" href="https://maps.google.com/?q=Mama%27s+on+Washington+Square%2C+1701+Stockton+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags">
               <span class="tag">从不接受订位</span>
@@ -749,14 +774,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
       </div></li>
       <li class="leg"><div class="spacer"></div><div class="inner">
         <span class="mode cable">缆车</span>
-        <span class="detail"><b>12 分钟</b> · 换 Powell-Mason 线坐到 Bay &amp; Taylor 终点站 —— 今天第二条缆车线，同一张通票</span>
+        <span class="detail"><b>12 分钟</b> · 这次是 <b>Powell-Mason 线，黄色顶牌</b>（和早上那条相反）· 在 <b>Mason &amp; Union</b> 上车，坐 <b>outbound 往渔人码头</b>方向 · 一路坐到终点 <b>Taylor &amp; Bay</b>，不用担心过站 · 同一张通票</span>
       </div></li>
 
       <li class="stop">
         <div class="time">13:10</div>
         <div class="track">
           <div class="card">
-            <h3>Buena Vista Cafe 的爱尔兰咖啡</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Mama%27s+on+Washington+Square%2C+1701+Stockton+St%2C+San+Francisco&amp;destination=Buena+Vista+Cafe%2C+2765+Hyde+St%2C+San+Francisco&amp;travelmode=transit" target="_blank" rel="noopener">Buena Vista Cafe 的爱尔兰咖啡<span class="arrow">↗ 公交路线</span></a></h3>
             <p class="addr">2765 Hyde St（Beach 路口）· 周五 09:00–24:00<a class="maplink" href="https://maps.google.com/?q=Buena+Vista+Cafe%2C+2765+Hyde+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags"><span class="tag cost">每杯约 $15</span><span class="tag">30 分钟</span></div>
             <p class="note"><b>爱尔兰咖啡是 1952 年由这家酒吧引进美国的</b>，配方至今没动过。他们把玻璃杯在吧台上排成一整排，一次性从头浇到尾 —— 值得看，不只是值得喝。它在 Powell-Hyde 线的最末端，从 Powell-Mason 线放你下车的地方走一小段就到。</p>
@@ -778,7 +803,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">13:45</div>
         <div class="track">
           <div class="card">
-            <h3>Ghirardelli Square → Hyde Street Pier</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Buena+Vista+Cafe%2C+2765+Hyde+St%2C+San+Francisco&amp;destination=Hyde+Street+Pier%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Ghirardelli Square → Hyde Street Pier<span class="arrow">↗ 步行路线</span></a></h3>
             <p class="note">两处都免费穿行。Hyde Street Pier 停着一排 19 世纪的老船，站在码头上就能看清楚，不用买票登船。</p>
           </div>
         </div>
@@ -788,7 +813,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">14:15</div>
         <div class="track">
           <div class="card">
-            <h3>Boudin —— 酸面包这一站</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Hyde+Street+Pier%2C+San+Francisco&amp;destination=Boudin+Bakery%2C+160+Jefferson+St%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Boudin —— 酸面包这一站<span class="arrow">↗ 步行路线</span></a></h3>
             <p class="note">160 Jefferson St，开到 22:00。蛤蜊浓汤装在酸面包碗里，约 $15，两人分一个。旧金山酸面包的酸味来自一株以这座城市命名的野生菌种 —— <em>Lactobacillus sanfranciscensis</em> —— 这就是它在别处烤不出同一个味道的真正原因。早午餐在你身后，晚餐还很远，所以这一站是桥梁：一碗，两把勺子。</p>
           </div>
         </div>
@@ -798,7 +823,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">14:45</div>
         <div class="track">
           <div class="card">
-            <h3>Pier 39 看海狮</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Boudin+Bakery%2C+160+Jefferson+St%2C+San+Francisco&amp;destination=Pier+39+Sea+Lion+K+Dock%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Pier 39 看海狮<span class="arrow">↗ 步行路线</span></a></h3>
             <p class="addr">K-Dock，西侧游艇码头<a class="maplink" href="https://maps.google.com/?q=Pier+39+Sea+Lion+K+Dock%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags"><span class="tag free">免费</span><span class="tag">35 分钟</span></div>
             <p class="note">去<b>西侧的 K-Dock</b>，不是购物区那一层 —— 海狮群实际是爬上那些浮动平台的。下午这个时段它们又吵又层层叠在一起。</p>
@@ -819,7 +844,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">15:40</div>
         <div class="track">
           <div class="card">
-            <h3>Palace of Fine Arts（艺术宫）</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pier+39%2C+San+Francisco&amp;destination=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco&amp;travelmode=transit" target="_blank" rel="noopener">Palace of Fine Arts（艺术宫）<span class="arrow">↗ 公交路线</span></a></h3>
             <p class="addr">3601 Lyon St<a class="maplink" href="https://maps.google.com/?q=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags"><span class="tag free">免费</span><span class="tag">全天开放</span><span class="tag">45 分钟</span></div>
             <p class="note">1915 年世博会留下来的罗马式圆顶，倒映在有天鹅的湖面上。<b>15:00 到 17:00 是这里全天最好的光</b> —— 你是刻意卡在这个窗口，不是碰巧。</p>
@@ -837,7 +862,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">16:25</div>
         <div class="track">
           <div class="card">
-            <h3>Crissy Field → Torpedo Wharf</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco&amp;destination=Torpedo+Wharf%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Crissy Field → Torpedo Wharf<span class="arrow">↗ 步行路线</span></a></h3>
             <div class="tags"><span class="tag free">免费</span><span class="tag">45 分钟</span></div>
             <p class="note">一条贴着海湾的平路，全程大桥就在正前方。Torpedo Wharf 让你站到水面上去，正面拍大桥，后面叠着 Marin Headlands 的山。今天最大风的一个点 —— 外套在这里开始值钱。</p>
           </div>
@@ -853,7 +878,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">17:15</div>
         <div class="track">
           <div class="card">
-            <h3>Presidio Tunnel Tops</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Torpedo+Wharf%2C+San+Francisco&amp;destination=Presidio+Tunnel+Tops%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Presidio Tunnel Tops<span class="arrow">↗ 步行路线</span></a></h3>
             <div class="tags"><span class="tag free">免费</span><span class="tag">45 分钟</span></div>
             <p class="note">建在高速隧道顶上的公园，2022 年开放。大桥、海湾、Alcatraz 和市区天际线，转一下头全在视野里，而且脚下是可以躺下的草坪。上面有餐车，如果离晚餐的空档开始咬人了。</p>
           </div>
@@ -869,7 +894,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">18:20</div>
         <div class="track">
           <div class="card">
-            <h3>Baker Beach 看日落</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Presidio+Tunnel+Tops%2C+San+Francisco&amp;destination=Baker+Beach%2C+Bowley+St%2C+San+Francisco&amp;travelmode=driving" target="_blank" rel="noopener">Baker Beach 看日落<span class="arrow">↗ 打车路线</span></a></h3>
             <p class="addr">Bowley St 停车场, Presidio · 日落 19:36<a class="maplink" href="https://maps.google.com/?q=Baker+Beach%2C+Bowley+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags"><span class="tag free">免费</span><span class="tag hours">日落 19:36</span></div>
             <p class="note">大桥在你右手边，悬崖在背后，太阳沉进开阔的太平洋。你到的时候手里还握着 <b>76 分钟的光</b> —— 这段余量就是全部意义。不用跑，不用从车窗里看天空。</p>
@@ -892,7 +917,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">20:25</div>
         <div class="track">
           <div class="card">
-            <h3>Sotto Mare 吃 Cioppino</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Baker+Beach%2C+Bowley+St%2C+San+Francisco&amp;destination=Sotto+Mare%2C+552+Green+St%2C+San+Francisco&amp;travelmode=driving" target="_blank" rel="noopener">Sotto Mare 吃 Cioppino<span class="arrow">↗ 打车路线</span></a></h3>
             <p class="addr">552 Green St, North Beach · (415) 398-3181 · 周五 11:30–22:00<a class="maplink" href="https://maps.google.com/?q=Sotto+Mare%2C+552+Green+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
             <div class="tags">
               <span class="tag cost">$49.95，两人份</span>
@@ -927,7 +952,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="time">21:50</div>
         <div class="track">
           <div class="card">
-            <h3>回到 480 Sutter</h3>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Sotto+Mare%2C+552+Green+St%2C+San+Francisco&amp;destination=SF+Marriott+Union+Square%2C+480+Sutter+St%2C+San+Francisco&amp;travelmode=driving" target="_blank" rel="noopener">回到 480 Sutter<span class="arrow">↗ 打车路线</span></a></h3>
             <p class="note">关于你提的安全问题：Union Square 本身没问题，但 Tenderloin 的边界从你家门口往西南大约三个街区就开始了，你听到的那些说法指的是那一片。Uber 直接停在酒店门口就完全绕开了。如果你更想走回去，从 North Beach 沿 Columbus、Kearny、Bush 走到 Sutter 大约 20 分钟，一路有人有灯，还会经过 Chinatown 的牌楼，当作看这座城市的最后一眼也不错。到时候你自己决定。</p>
           </div>
         </div>
