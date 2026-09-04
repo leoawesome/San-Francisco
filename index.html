@@ -198,7 +198,7 @@ h2 .num{
 .prep li{
   display:grid;
   grid-template-columns:auto 1fr;
-  gap:.75rem;
+  gap:.5rem .75rem;
   align-items:start;
   background:var(--surface);
   border:1px solid var(--rule);
@@ -217,6 +217,9 @@ h2 .num{
   white-space:nowrap;
 }
 .prep p{margin:0;font-size:.92rem}
+.prep li>.k{grid-row:1}
+.prep li>*:not(.k){grid-column:2}
+.prep .flag{margin:.15rem 0 0}
 
 /* ---------- the route ---------- */
 .route{margin:0;padding:0;list-style:none}
@@ -583,12 +586,7 @@ footer p{margin:0 0 .4rem}
   vertical-align:baseline;
 }
 .maplink:active{background:var(--orange);color:var(--surface)}
-.contact a{
-  display:inline-block;
-  padding:.25rem 0;
-  font-weight:500;
-}
-/* respect notches and rounded corners */
+.contact a{display:inline-block;padding:.25rem 0;font-weight:500}
 @supports(padding:max(0px)){
   .wrap{
     padding-left:max(1.15rem,env(safe-area-inset-left));
@@ -596,7 +594,6 @@ footer p{margin:0 0 .4rem}
     padding-bottom:max(4rem,env(safe-area-inset-bottom));
   }
 }
-/* narrow phones: reclaim the time-rail gutter */
 @media(max-width:22rem){
   .stop,.leg{grid-template-columns:3.1rem 1fr}
   .stop .track,.leg .inner{padding-left:1.05rem}
@@ -631,7 +628,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
     <ul class="prep">
       <li>
         <span class="k">交通票</span>
-        <p>在 MuniMobile app 里买 <b>1-Day Visitor Passport，每人 $15</b>。缆车、公交、historic streetcar 全部无限次。单次缆车票价 $9，你今天要坐两趟，所以刷第二次就已经赚回来了。注意：<b>MuniMobile 从 9 月 1 日起停售单程票</b>，现在只能买通票、用 Clipper 卡，或者直接拿感应式银行卡在读卡器上刷。</p>
+        <p><b>用 iPhone 买，两张一起买，不用现金。</b>MuniMobile 装不了 Android（Play Store 提示"为旧版 Android 制作"），所以整天的车票都走 iPhone。</p>
+        <p>iOS 版 MuniMobile 的 <b>My Tickets</b> 页面顶部有一个 <b>Multiple Riders</b> 开关 —— 打开，选 <b>2 张 1-Day Visitor Passport（每张 $15，共 $30）</b>，用信用卡或 Apple Pay 付。<b>一台手机就能装两个人的票</b>，上车时两张一起激活，把同一个屏幕给车掌看。不需要转发到另一台手机，也转不了 —— 但根本不需要转。</p>
+        <p>这张通票覆盖<b>缆车 + 公交 + historic streetcar 全天无限次</b>，所以它同时解决了下午那段 30 Stockton 公交，省掉一趟 $16 的 Uber。单买缆车票是 $9 一趟，两人两趟就 $36，比通票贵。</p>
+        <div class="flag">
+          <span class="lbl">缆车例外</span>
+          <p>缆车<b>不收</b>直接刷的银行卡、Apple Pay 或 Google Pay —— 全 Muni 就它是例外。官方只认三种：MuniMobile 票、Clipper 卡，或者<b>正好数额的现金（不找零）</b>。公交和地面电车照常可以直接拿感应卡刷读卡器。</p>
+          <p>Clipper 在这里不适用：<b>每个人必须各自一张卡</b>，一张卡付不了两个人。所以两人同行时 MuniMobile 才是对的选择。</p>
+        </div>
+        <div class="flag">
+          <span class="lbl">别在总站上车</span>
+          <p><b>Powell &amp; Market、Bay &amp; Taylor、Hyde &amp; Beach</b> 这三个总站必须先买好票才能上。你今天两次上车都在中途站（Powell &amp; Sutter、Mason &amp; Union），本来就是对的 —— 这也是选你家门口那个转角的又一个理由。</p>
+        </div>
       </li>
       <li>
         <span class="k">穿搭</span>
@@ -799,8 +807,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
       </li>
 
       <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode bus">30 Stockton</span>
+        <span class="detail"><b>25 分钟</b> · <b>通票已含，$0</b> · 在 North Point 上车往西穿过 Marina，30 路已延伸到 Crissy Field，East Beach 那一站走几分钟就到艺术宫</span>
+      </div></li>
+      <li class="leg"><div class="spacer"></div><div class="inner">
         <span class="mode uber">Uber</span>
-        <span class="detail"><b>12 分钟</b> · 约 $16 · 从 Pier 39 到 Marina 没有直达公交，这一段值得花钱</span>
+        <span class="detail">赶时间就打车：<b>12 分钟</b> · 约 $16 · 比公交快 13 分钟</span>
       </div></li>
 
       <li class="stop">
@@ -933,15 +945,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
           <tr><th>项目</th><th>说明</th><th class="n">合计</th></tr>
         </thead>
         <tbody>
-          <tr><td>Muni Visitor Passport</td><td>一日无限次 ×2</td><td class="n">$30</td></tr>
+          <tr><td>Muni Visitor Passport</td><td>一日无限次 ×2，iPhone 上买</td><td class="n">$30</td></tr>
           <tr><td>Mama's</td><td>两份主餐，咖啡无限续</td><td class="n">$65</td></tr>
           <tr><td>Buena Vista</td><td>爱尔兰咖啡 ×2</td><td class="n">$30</td></tr>
           <tr><td>Boudin</td><td>一个面包碗，两人分</td><td class="n">$15</td></tr>
-          <tr><td>Uber</td><td>4 段，未含小费</td><td class="n">$67</td></tr>
+          <tr><td>Uber</td><td>3 段，未含小费（Pier 39 那段改坐 30 路）</td><td class="n">$51</td></tr>
           <tr><td>Sotto Mare</td><td>两人份 cioppino 加一道前菜</td><td class="n">$85</td></tr>
         </tbody>
         <tfoot>
-          <tr><td>全天合计</td><td>两人</td><td class="n">约 $292</td></tr>
+          <tr><td>全天合计</td><td>两人 · 全程无需现金</td><td class="n">约 $276</td></tr>
         </tfoot>
       </table>
     </div>
@@ -1145,7 +1157,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
       </li>
       <li>
         <span class="verdict stale">过期</span>
-        <p><strong>用手机 app 买 Muni 单程票。</strong><em>MuniMobile 从 9 月 1 日起停售单程票。现在只有一日通票、Clipper 卡，或者感应式银行卡直接刷。</em></p>
+        <p><strong>用手机 app 买 Muni 单程票。</strong><em>MuniMobile 从 9 月 1 日起停售单程票（缆车票除外，仍在售）。而且它装不了你的 Android 机 —— 所以整天车票走 iPhone，一台手机开 Multiple Riders 买两张。缆车另有例外：不收直刷银行卡，详见第 01 节。</em></p>
       </li>
       <li>
         <span class="verdict ok">改动</span>
@@ -1201,7 +1213,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
 
   <footer>
     <p>营业时间、价格、封路和天气都是按 2026 年 9 月 4 日星期五逐项核对后才写进这一页的。餐厅价格会变，Uber 估价变得更快 —— 费用表当作量级看，不是报价。</p>
-    <p>日落 19:36 · Beach Hazards Statement 生效至周一 23:00 · Muni 手机单程票已于 9 月 1 日停售 · Mama's 14:00 关门 · Sotto Mare 22:00 关门</p>
+    <p>日落 19:36 · Beach Hazards Statement 生效至周一 23:00 · 缆车只认 MuniMobile 票 / Clipper / 正好现金，不收直刷银行卡 · Mama's 14:00 关门 · Sotto Mare 22:00 关门</p>
   </footer>
 
 </div>
