@@ -584,27 +584,20 @@ footer p{margin:0 0 .4rem}
 
 
 /* ---------- mobile priority ---------- */
-.maplink{
-  display:inline-block;margin-left:.45rem;font-family:var(--display);font-weight:700;
-  font-size:.72rem;letter-spacing:.1em;color:var(--orange);background:var(--orange-wash);
-  border-radius:2px;padding:.28rem .5rem .22rem;text-decoration:none;white-space:nowrap;
-  vertical-align:baseline;
-}
+.maplink{display:inline-block;margin-left:.45rem;font-family:var(--display);font-weight:700;
+ font-size:.72rem;letter-spacing:.1em;color:var(--orange);background:var(--orange-wash);
+ border-radius:2px;padding:.28rem .5rem .22rem;text-decoration:none;white-space:nowrap;vertical-align:baseline}
 .maplink:active{background:var(--orange);color:var(--surface)}
 .contact a{display:inline-block;padding:.25rem 0;font-weight:500}
-@supports(padding:max(0px)){
-  .wrap{
-    padding-left:max(1.15rem,env(safe-area-inset-left));
-    padding-right:max(1.15rem,env(safe-area-inset-right));
-    padding-bottom:max(4rem,env(safe-area-inset-bottom));
-  }
-}
+@supports(padding:max(0px)){.wrap{
+ padding-left:max(1.15rem,env(safe-area-inset-left));
+ padding-right:max(1.15rem,env(safe-area-inset-right));
+ padding-bottom:max(4rem,env(safe-area-inset-bottom))}}
 @media(max-width:22rem){
-  .stop,.leg{grid-template-columns:3.1rem 1fr}
-  .stop .track,.leg .inner{padding-left:1.05rem}
-  .card{padding:.8rem .8rem .85rem}
-  body{font-size:14.5px}
-}
+ .stop,.leg{grid-template-columns:3.1rem 1fr}
+ .stop .track,.leg .inner{padding-left:1.05rem}
+ .card{padding:.8rem .8rem .85rem}
+ body{font-size:14.5px}}
 
 a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
@@ -637,6 +630,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <p>iOS 版 MuniMobile 的 <b>My Tickets</b> 页面顶部有一个 <b>Multiple Riders</b> 开关 —— 打开，选 <b>2 张 1-Day Visitor Passport（每张 $15，共 $30）</b>，用信用卡或 Apple Pay 付。<b>一台手机就能装两个人的票</b>，上车时两张一起激活，把同一个屏幕给车掌看。不需要转发到另一台手机，也转不了 —— 但根本不需要转。</p>
         <p>这张通票覆盖<b>缆车 + 公交 + historic streetcar 全天无限次</b>，所以它同时解决了下午那段 30 Stockton 公交，省掉一趟 $16 的 Uber。单买缆车票是 $9 一趟，两人两趟就 $36，比通票贵。</p>
         <div class="flag">
+          <span class="lbl">怎么用</span>
+          <p><b>公交、地面电车、Muni Metro、缆车全部包含在这 $30 里，不再另外收钱。</b>坐几趟都一样，30 Stockton 是 $0，临时多坐一趟也是 $0。今天唯一不包含的是 Uber。</p>
+          <p>用法：<b>上第一趟车之前，在 app 里把两张票一起激活</b>（一天票从激活起到<b>今晚 23:59</b> 有效，所以早上激活一次就管一整天，不用每趟操作）。上公交时<b>把手机屏幕给司机看一眼</b>就走；缆车给车掌看。查票员偶尔上车抽查，也是看这个屏幕。两个人就是两张票，同一台 iPhone 上都能显示。</p>
+          <p><b>千万不要拿手机去碰 Clipper 读卡器。</b>读卡器不知道你 app 里有通票，会直接从 Clipper 账户里扣钱 —— 等于付两次。看，不碰。</p>
+        </div>
+        <div class="flag">
           <span class="lbl">缆车例外</span>
           <p>缆车<b>不收</b>直接刷的银行卡、Apple Pay 或 Google Pay —— 全 Muni 就它是例外。官方只认三种：MuniMobile 票、Clipper 卡，或者<b>正好数额的现金（不找零）</b>。公交和地面电车照常可以直接拿感应卡刷读卡器。</p>
           <p>Clipper 在这里不适用：<b>每个人必须各自一张卡</b>，一张卡付不了两个人。所以两人同行时 MuniMobile 才是对的选择。</p>
@@ -659,7 +658,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
 
   <section>
     <h2><span class="num">02</span> 路线</h2>
-    <p class="sub">两顿热的正餐，都是旧金山原创的菜，排队都安排在你还有精神的时候。总步行约 7 公里，几乎全是平路或下坡 —— 爬坡交给缆车。</p>
+    <p class="sub">两顿热的正餐，都是旧金山原创的菜，排队都安排在你还有精神的时候。总步行约 <b>5.5 公里</b>，几乎全是平路或下坡 —— 爬坡交给缆车。（原先艺术宫之后那段长途步行已删，砍掉约 5 公里。）</p>
     <div class="benchnote">
       <b>两种可点的链接。</b>点<b>站点标题</b>（带 ↗ 的那行）= 打开 Google 地图<b>路线导航</b>，起点自动设成上一站，交通方式也已按这一段该走的方式设好（步行 / 公交 / 打车）。点地址后面的 <span class="tag">地图</span> = 只看这个地点在哪，不算路线。
     </div>
@@ -846,7 +845,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
           <div class="card">
             <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pier+39%2C+San+Francisco&amp;destination=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco&amp;travelmode=transit" target="_blank" rel="noopener">Palace of Fine Arts（艺术宫）<span class="arrow">↗ 公交路线</span></a></h3>
             <p class="addr">3601 Lyon St<a class="maplink" href="https://maps.google.com/?q=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco" target="_blank" rel="noopener">地图</a></p>
-            <div class="tags"><span class="tag free">免费</span><span class="tag">全天开放</span><span class="tag">45 分钟</span></div>
+            <div class="tags"><span class="tag free">免费</span><span class="tag">全天开放</span><span class="tag">60 分钟</span></div>
             <p class="note">1915 年世博会留下来的罗马式圆顶，倒映在有天鹅的湖面上。<b>15:00 到 17:00 是这里全天最好的光</b> —— 你是刻意卡在这个窗口，不是碰巧。</p>
             <p class="note">圆顶上的天使雕像今年做过清洗，但那批工程是 1 月到 3 月。今天没有任何封闭。</p>
           </div>
@@ -854,33 +853,27 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
       </li>
 
       <li class="leg"><div class="spacer"></div><div class="inner">
-        <span class="mode walk">步行</span>
-        <span class="detail"><b>15 分钟</b> · 往西进 Crissy Field，全程平路</span>
+        <span class="mode uber">Uber</span>
+        <span class="detail"><b>6 分钟</b> · 约 $10 · 直接送到 Tunnel Tops。<b>这一段千万不要走</b> —— 原因见下面那张卡</span>
       </div></li>
 
       <li class="stop">
-        <div class="time">16:25</div>
+        <div class="time">16:50</div>
         <div class="track">
           <div class="card">
-            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco&amp;destination=Torpedo+Wharf%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Crissy Field → Torpedo Wharf<span class="arrow">↗ 步行路线</span></a></h3>
-            <div class="tags"><span class="tag free">免费</span><span class="tag">45 分钟</span></div>
-            <p class="note">一条贴着海湾的平路，全程大桥就在正前方。Torpedo Wharf 让你站到水面上去，正面拍大桥，后面叠着 Marin Headlands 的山。今天最大风的一个点 —— 外套在这里开始值钱。</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="leg"><div class="spacer"></div><div class="inner">
-        <span class="mode walk">步行</span>
-        <span class="detail"><b>15 分钟</b> · 上到崖顶</span>
-      </div></li>
-
-      <li class="stop">
-        <div class="time">17:15</div>
-        <div class="track">
-          <div class="card">
-            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Torpedo+Wharf%2C+San+Francisco&amp;destination=Presidio+Tunnel+Tops%2C+San+Francisco&amp;travelmode=walking" target="_blank" rel="noopener">Presidio Tunnel Tops<span class="arrow">↗ 步行路线</span></a></h3>
-            <div class="tags"><span class="tag free">免费</span><span class="tag">45 分钟</span></div>
-            <p class="note">建在高速隧道顶上的公园，2022 年开放。大桥、海湾、Alcatraz 和市区天际线，转一下头全在视野里，而且脚下是可以躺下的草坪。上面有餐车，如果离晚餐的空档开始咬人了。</p>
+            <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Palace+of+Fine+Arts%2C+3601+Lyon+St%2C+San+Francisco&amp;destination=Presidio+Tunnel+Tops%2C+San+Francisco&amp;travelmode=driving" target="_blank" rel="noopener">Presidio Tunnel Tops<span class="arrow">↗ 打车路线</span></a></h3>
+            <div class="tags"><span class="tag free">免费</span><span class="tag">80 分钟，不赶</span><span class="tag">今天最好的免费景</span></div>
+            <p class="note">建在高速隧道顶上的公园，2022 年开放。大桥、海湾、Alcatraz 和市区天际线，转一下头全在视野里，而且脚下是可以躺下的草坪。上面有餐车 —— 离晚餐还有 3 个多小时，在这里垫一口正好。</p>
+            <p class="note">时间给足了 80 分钟。这里是这一段唯一值得停的地方，不用像原来那样赶。</p>
+            <div class="flag">
+              <span class="lbl">改动说明</span>
+              <p><b>Torpedo Wharf 已从行程里删掉，原来那段步行数字是我算错了。</b>真实距离：艺术宫走到 Torpedo Wharf 是 <b>1.8–2 英里（约 3 公里）</b>，30–45 分钟；再从那里上到 Tunnel Tops 又要<b>往东折回并爬坡约 2–2.5 公里</b>，30–40 分钟。合计 5 公里以上带爬升，而你上午已经走了约 4 公里。我原来标的"15 分钟"是错的。</p>
+              <p>而且 Torpedo Wharf <b>不是必去景点</b> —— 它是一座钓鱼栈桥，大桥正面视角不错，顺路走到才值得，不值得为它专程走 3 公里。Tunnel Tops 的视野更好，而 Baker Beach 才是今晚的正主。</p>
+            </div>
+            <div class="flag">
+              <span class="lbl">想踩到水边</span>
+              <p>Tunnel Tops 有一条路直接下到 <b>Crissy Field</b> 海滨，下去 5–10 分钟。想站到水边、近距离拍大桥就下去走一段 —— 但记住<b>回来是上坡</b>。不下去也完全不亏，上面的视野本来就更开阔。</p>
+            </div>
           </div>
         </div>
       </li>
@@ -944,8 +937,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
       </li>
 
       <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode cable">缆车</span>
+        <span class="detail"><b>推荐 · 通票已含，$0</b> · 走 8 分钟到 <b>Mason &amp; Union</b>，坐 <b>Powell-Mason 线 inbound（往市区方向）</b>，在 <b>Powell &amp; Sutter</b> 下 —— 就是你家门口那个转角。缆车运营到<b>约 23:00–24:00</b>，21:40 完全赶得上</span>
+      </div></li>
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode bus">30 Stockton</span>
+        <span class="detail"><b>通票已含，$0</b> · 在 Columbus/Stockton 上车往市区，穿过 Stockton 隧道到 <b>Sutter &amp; Stockton</b>，离酒店两个街区。缆车没了就用这个</span>
+      </div></li>
+      <li class="leg"><div class="spacer"></div><div class="inner">
+        <span class="mode walk">步行</span>
+        <span class="detail"><b>18–20 分钟</b> · 1.5 公里 · Columbus → Kearny → Bush → Powell，或者走 Grant Ave 穿唐人街。周五晚这条线有人有灯，本身没问题 —— 只是刚吃完一大锅海鲜，未必想走</span>
+      </div></li>
+      <li class="leg"><div class="spacer"></div><div class="inner">
         <span class="mode uber">Uber</span>
-        <span class="detail"><b>8 分钟</b> · 约 $12 · 门到门，天黑后不用走路</span>
+        <span class="detail"><b>8 分钟</b> · 约 $12 · 最省事，门到门</span>
       </div></li>
 
       <li class="stop">
@@ -953,7 +958,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <div class="track">
           <div class="card">
             <h3><a class="dirlink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Sotto+Mare%2C+552+Green+St%2C+San+Francisco&amp;destination=SF+Marriott+Union+Square%2C+480+Sutter+St%2C+San+Francisco&amp;travelmode=driving" target="_blank" rel="noopener">回到 480 Sutter<span class="arrow">↗ 打车路线</span></a></h3>
-            <p class="note">关于你提的安全问题：Union Square 本身没问题，但 Tenderloin 的边界从你家门口往西南大约三个街区就开始了，你听到的那些说法指的是那一片。Uber 直接停在酒店门口就完全绕开了。如果你更想走回去，从 North Beach 沿 Columbus、Kearny、Bush 走到 Sutter 大约 20 分钟，一路有人有灯，还会经过 Chinatown 的牌楼，当作看这座城市的最后一眼也不错。到时候你自己决定。</p>
+            <p class="note"><b>建议坐缆车回来。</b>Powell-Mason 线 inbound 的终点就是 Powell &amp; Sutter —— 你家门口那个转角，早上出发的同一个站。通票已经包含，$0，而且用缆车收尾这一天很完整：早上坐缆车上山看九曲花街，晚上坐缆车回家。</p>
+            <p class="note">关于你提的安全问题：Union Square 本身没问题，但 Tenderloin 的边界从你家门口往西南大约三个街区就开始了，你听到的那些说法指的是那一片。缆车和 Uber 都直接把你放在门口，等于完全绕开。</p>
+            <p class="note">走回去也不是不行 —— Columbus → Kearny → Bush → Powell 大约 18–20 分钟，周五晚这条线有人有灯，还会经过 Chinatown 牌楼。只是刚吃完一大锅 cioppino，两个人未必想走 1.5 公里。缆车更轻松，而且更有意思。</p>
           </div>
         </div>
       </li>
@@ -974,11 +981,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
           <tr><td>Mama's</td><td>两份主餐，咖啡无限续</td><td class="n">$65</td></tr>
           <tr><td>Buena Vista</td><td>爱尔兰咖啡 ×2</td><td class="n">$30</td></tr>
           <tr><td>Boudin</td><td>一个面包碗，两人分</td><td class="n">$15</td></tr>
-          <tr><td>Uber</td><td>3 段，未含小费（Pier 39 那段改坐 30 路）</td><td class="n">$51</td></tr>
+          <tr><td>Uber</td><td>3 段，未含小费（Pier 39 那段坐 30 路，回酒店坐缆车）</td><td class="n">$49</td></tr>
           <tr><td>Sotto Mare</td><td>两人份 cioppino 加一道前菜</td><td class="n">$85</td></tr>
         </tbody>
         <tfoot>
-          <tr><td>全天合计</td><td>两人 · 全程无需现金</td><td class="n">约 $276</td></tr>
+          <tr><td>全天合计</td><td>两人 · 全程无需现金</td><td class="n">约 $274</td></tr>
         </tfoot>
       </table>
     </div>
@@ -998,8 +1005,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <p><b>但它周五 20:30 就关门</b>，所以接不上 19:36 的日落。唯一可行的版本是 17:30 吃饭，然后在往西三个街区的 Ocean Beach 看日落 —— 代价是你所有日落照片里都不会有大桥。这就是交换条件。想要的话说一声，我把下午重排。</p>
       </div>
       <div class="swap">
+        <p class="when">想先回酒店休息，晚上再出来</p>
+        <p><b>时间上完全够。</b>艺术宫 16:40 结束 → Uber 回酒店约 17:00 → 躺一小时 → 17:45 出门 → Baker Beach 约 18:10，日落 19:36 前还有富余。代价是多两趟 Uber，约 $35。</p>
+        <p>如果为了省这趟折返，想找个<b>离晚餐更近的日落点</b>，最好的是 <b>Fort Mason, Great Meadow</b> —— 崖顶草坪，朝西，大桥 + Alcatraz + 整个海湾一览，免费全天开放，<b>到 Sotto Mare 只要 8 分钟车程</b>。次选 <b>Marina Green</b>，平地、朝西、有大桥，到晚餐约 10 分钟。</p>
+        <p><b>老实说差别在哪：</b>Baker Beach 是太阳直接沉进开阔太平洋、就落在大桥旁边，前景有悬崖，加上九月初那个接近对齐的角度 —— 照片是另一个级别。从 Fort Mason 看，大桥在 4 公里外，画面里小很多，而且太阳落在 Marin 山背后而不是海面上。大概是 Baker Beach 七到八成的效果，换来一半的路程。</p>
+        <p>两个不要去的：<b>Aquatic Park 的 Municipal Pier 已永久封闭</b>；<b>Pier 7</b> 朝东对着 Bay Bridge，日落方向完全相反（但蓝调时刻拍天际线很好）。想在北滩附近走走的话，<b>Coit Tower</b> 从 Sotto Mare 步行 8 分钟，塔 18:00 关但外面的 Pioneer Park 不关 —— 只是太阳是落在城市那一侧，不是落在大桥旁的海上，城市夜景强、日落弱。</p>
+      </div>
+      <div class="swap">
         <p class="when">Baker Beach 起雾了</p>
-        <p>回到你那时候已经熟悉的 <b>Torpedo Wharf</b>。它位于金门内侧而不是外侧，所以外海那边被雾封住时它经常还是晴的。平路、好走、叫车方便。</p>
+        <p>Uber 8 分钟到 <b>Torpedo Wharf</b> 或 <b>Crissy Field</b>。它们在金门<b>内侧</b>而不是外侧，所以外海那边被雾封住时这里经常还是晴的。（这两处已不在步行路线上，但打车过去很近。）</p>
+        <p>再退一步就是 <b>Fort Mason, Great Meadow</b> —— 位置更靠东、更进海湾里，雾一般到不了，而且离晚餐更近。</p>
       </div>
       <div class="swap">
         <p class="when">下午过半时你已经晚了一小时</p>
@@ -1124,7 +1139,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-off
         <span class="bmeta">周四至周一 10:00–17:00 · 屋顶 16:30 关</span>
       </div>
       <p>一座内战时期的砖砌炮台，就塞在大桥南端锚碇的正下方 —— 拱形炮位、海浪飞沫，抬头就是整个桥身填满天空。</p>
-      <div class="bswap no"><span class="sl">代价</span><p>它正好在你 Crissy Field 那段路上，但要进去得 16:20 前到，而你那个时间正安排在 Torpedo Wharf。想进炮台，就拿 Tunnel Tops 来换。</p></div>
+      <div class="bswap no"><span class="sl">代价</span><p>17:00 关门、屋顶 16:30 就关，而你 16:40 才离开艺术宫。要进去只能<b>提前离开艺术宫、并且拿 Tunnel Tops 来换</b> —— Uber 直接过去，16:20 前到。个人建议不换：Tunnel Tops 视野更好，而且不用赶时间。</p></div>
     </div>
     <div class="bitem">
       <div class="bhead">
